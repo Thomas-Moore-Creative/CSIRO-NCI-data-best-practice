@@ -15,14 +15,19 @@ Work with an informal working group (WG) to help build best / better practice to
 - [ ] implement and communicate results widely
 - [ ] take on further specific use cases
 
-## Initial use case - archive Decadal Climate Forecasting Project (DCFP) NCI Australasian Leadership Computing Grants (ALCG) raw netdcf to tape at CSIRO 
+## Initial use case
+### Archive Decadal Climate Forecasting Project (DCFP) NCI Australasian Leadership Computing Grants (ALCG) raw netdcf to tape at CSIRO 
 The CSIRO DCFP is currently working under a recent NCI ALCG merit allocation - https://research.csiro.au/dfp/dcfp-awarded-key-computation-by-the-nci/ .
-Current storage limitations means that as the effort proceeds large collections of files will need to be archived constantly back to tape at CSIRO.
+Current storage limitations means that as the effort proceeds large collections of files will need to be archived constantly back to tape at CSIRO.  If data-transfer is not fast enough work will stop at NCI due to lack of storage resources.
 
 The current task is to move 8 x 11TB collections of tarfiles where each 11TB collection is a directory with:
-* 96 x 112GB tar files
+* 96 x 112GB tar files 
 * 1  x 40GB tar file
-* two small directories with log files
+* two small directories with log files related to the parallel tarring process
+
+112GB is close to the recommended 100GB files size for the CSIRO tape system and also the size of each model "member" keeping the essential structure of each model run.
+
+See related issue for more detail
 
 ## Suggestion
-WG contributors add "issues" to https://github.com/Thomas-Moore-Creative/CSIRO-NCI-data-best-practice/issues with other specific use cases
+WG contributors add "issues" to https://github.com/Thomas-Moore-Creative/CSIRO-NCI-data-best-practice/issues with other specific use cases!
