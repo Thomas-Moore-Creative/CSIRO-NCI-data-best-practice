@@ -20,6 +20,8 @@ Work with an informal working group (WG) to help build best / better practice to
 The CSIRO DCFP is currently working under a recent NCI ALCG merit allocation - https://research.csiro.au/dfp/dcfp-awarded-key-computation-by-the-nci/ .
 Current storage limitations means that as the effort proceeds large collections of files will need to be archived constantly back to tape at CSIRO.  If data-transfer is not fast enough work will stop at NCI due to lack of storage resources.
 
+Our current need is to keep pace with 10TB per day - which would require approximately 120MB/s.  Previous `bbcp` efforts by @hot007 reached 200MB/s.
+
 The current task is to move 8 x 11TB collections of tarfiles where each 11TB collection is a directory with:
 * 96 x 112GB tar files 
 * 1  x 40GB tar file
