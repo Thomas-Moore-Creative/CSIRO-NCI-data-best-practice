@@ -40,6 +40,7 @@ This gives you:
 `find ./*.tar -type f > ../f6_2012_filelist.txt`
 - Move the filelist to CSIRO (using `rsync`) and format <br>
 `cut -c 3- f6_2012_filelist.txt > cut_f6_2012_filelist.txt`<br>
+- Run the 10 parallel rsyncs until the task is done
 ```time cat /datastore/d/dcfp/NCI_file_lists/cut_f6_2012_filelist.txt | parallel -j 10 --results /datastore/d/dcfp/logs/ 'rsync -ailPW --log-file="/datastore/d/dcfp/logs/f6_2012_rsync.log.$(date +%Y%m%d%H%m%S)" -e "ssh  -T -c aes128-ctr"  USER@gadi-dm.nci.org.au:/scratch/v14/USER/tar_tmp/f6.WIP.c5-d60-pX-f6-20121101.20200831_153624/{} /datastore/d/dcfp/CAFE/forecasts/f6/'```
 
 The above command will take the formatted filelist as input to a `parallel` job with 10 streams, saving `parallel` results (`stderr`, `stdout`) to `/logs`, using the `-ailPW` flags (NB: `-W` is required for `Ruby`), logging `rsync` output to `/logs`, employing the `aes128-ctr` cipher, and executing across all filenames in `cut_f6_2012_filelist.txt` in the `/scratch/v14/USER/tar_tmp/f6.WIP.c5-d60-pX-f6-20121101.20200831_153624/` directory.  `GNU Parallel` will execute 10 streams at a time until the full job is done.
