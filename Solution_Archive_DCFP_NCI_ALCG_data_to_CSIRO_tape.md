@@ -10,7 +10,7 @@ Approach utilises:
 - extra memory allocation setting
 - NOT run from io queue our the DM node (NFS problem accessing `/datastore`) but from a screen on Ruby at the command line. 
 
-###### NB: ourn goal here is to get data onto `/datastore` tape, hence the `ruby` approach.  If you are looking to reach other CSIRO storage the io queue on the DM node is possibly preferable.
+###### NB: our goal here is to get data onto `/datastore` tape, hence the `ruby` approach.  If you are looking to reach other CSIRO storage the io queue on the DM node is possibly preferable.
 
 #### example command
 `cat /datastore/d/dcfp/cut_fake_filelist.txt | parallel -j 8 'rsync -ailPW -e "ssh  -T -c aes128-ctr"  USERNAME@gadi-dm.nci.org.au:/scratch/v14/USERNAME/better_practice_testing/test_data/{} /datastore/d/dcfp/fake_f6'`
