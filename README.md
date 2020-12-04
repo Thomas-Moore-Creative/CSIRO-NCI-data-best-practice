@@ -11,7 +11,7 @@ Work with an informal working group (WG) to help build best / better practice to
 ## To-Do List
 
 - [x] Define an initial use case
-- [ ] generate better-practice approach to initial case
+- [x] generate better-practice approach to initial case
 - [ ] implement and communicate results widely
 - [ ] take on further specific use cases
 
