@@ -12,7 +12,7 @@ Work with an informal working group (WG) to help build best / better practice to
 
 - [x] Define an initial use case
 - [x] generate better-practice approach to initial case
-- [ ] implement and communicate results widely
+- [x] implement and communicate results widely
 - [ ] take on further specific use cases
 
 ## Initial use case
