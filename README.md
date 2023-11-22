@@ -33,3 +33,7 @@ See related issue for more detail
 
 ## Suggestion
 WG contributors add "issues" to https://github.com/Thomas-Moore-Creative/CSIRO-NCI-data-best-practice/issues with other specific use cases!
+
+## UPDATE 2023
+@dsroberts has some suggested improvements.  See > https://github.com/Thomas-Moore-Creative/CSIRO-NCI-data-best-practice/issues/6#issuecomment-1418391171
+
